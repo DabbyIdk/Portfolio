@@ -1,0 +1,113 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 0;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(224, 224, 224, 0.5); 
+    opacity: 10%;
+    position: fixed;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header" 
+    "body body siderbar"
+    "body body sidebar";
+    width: 100%;
+    margin: 0;
+}
+
+.main .main-header {
+    grid-area: header;
+    grid-row: 1px;
+    margin-left: 0pt;
+}
+
+#logo {
+    grid-area: header;
+    width: 80pt;
+    margin-left: 80pt;
+    margin-top: 7pt;
+    float: left;
+}
+
+#hånd {
+    grid-area: header;
+    width: 200pt; 
+    transform: rotate(270deg);
+    float: right;
+    margin: 0;
+}
+
+.main .main-body {
+    grid-area: body;
+}
+
+#meg {
+    grid-area: body;
+    width: 200pt;
+    margin-top: -150pt;
+    margin-left: 20pt;
+}
+
+.main .main-body2{
+    grid-area: body;
+} 
+
+#terninger {
+    grid-area: body;
+    margin-top: -60pt;
+    margin-left: 30%;
+    width: 600pt;
+}
+
+button {
+    display: flex;
+    background: transparent; 
+    border: none;
+    background-size: 100pt 100pt;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+#b1 {
+    margin-top: -230pt;
+    margin-left: 290pt;
+    background-image: url(IMG_8588_0000_Layer-2.png);
+}
+
+#b2 {
+    margin-top: 37pt;
+    margin-left: 390pt;
+    background-image: url(IMG_8588_0001_Layer-3.png);
+}
+
+#b3 {
+    margin-top: 10pt;
+    margin-left: 540pt;
+    background-image: url(IMG_8588_0002_Layer-4.png);
+}
+
+#b4 {
+    margin-top: -85pt;
+    margin-left: 665pt;
+    background-image: url(IMG_8588_0003_Layer-5.png);
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
