@@ -43,7 +43,7 @@ body{
 
 #hånd {
     grid-area: header;
-    width: 200pt; 
+    width: 200pt;
     transform: rotate(270deg);
     float: right;
     margin: 0;
@@ -64,50 +64,49 @@ body{
     grid-area: body;
 } 
 
-#terninger {
-    grid-area: body;
-    margin-top: -60pt;
-    margin-left: 30%;
-    width: 600pt;
-}
-
 button {
     display: flex;
     background: transparent; 
     border: none;
-    background-size: 100pt 100pt;
+    width: 100pt; height: 100pt;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
+
 }
 #b1 {
-    margin-top: -230pt;
-    margin-left: 290pt;
+    margin-left: 250pt;
+    padding-top: 50pt;
+    padding-left: 50pt;
     background-image: url(IMG_8588_0000_Layer-2.png);
 }
 
 #b2 {
-    margin-top: 37pt;
+    margin-top: -50pt;
     margin-left: 390pt;
+    padding-top: 50pt;
     background-image: url(IMG_8588_0001_Layer-3.png);
+    font-size: 9pt;
 }
 
 #b3 {
-    margin-top: 10pt;
+    margin-top: -80pt;
     margin-left: 540pt;
+    padding-top: 50pt;
+    padding-left: 13pt;
     background-image: url(IMG_8588_0002_Layer-4.png);
 }
 
 #b4 {
-    margin-top: -85pt;
+    margin-top: -180pt;
     margin-left: 665pt;
+    padding-top: 40pt;
+    padding-left: 39pt;
     background-image: url(IMG_8588_0003_Layer-5.png);
-}
-
-button {
-    cursor: pointer;
 }
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255)
 }

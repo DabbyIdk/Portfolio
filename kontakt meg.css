@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: 0;
+}
+
+.menu-bar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(224, 224, 224, 0.5); 
+    opacity: 10%;
+    position: fixed;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "header header header" 
+    "body body siderbar";
+    width: 100%;
+    margin: 0;
+}
+
+.main .main-header {
+    grid-area: header;
+    grid-row: 1px;
+    margin-left: 0pt;
+}
+
+#logo {
+    grid-area: header;
+    width: 80pt;
+    margin-left: 80pt;
+    margin-top: 7pt;
+    float: left;
+}
+
+.main .main-body {
+    grid-area: body;
+}
+
+h3 {
+    color: white;
+    margin-left: 20pt;
+    margin-top: -10pt;
+}
